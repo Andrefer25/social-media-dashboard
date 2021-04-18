@@ -92,6 +92,11 @@ body {
   );
 }
 
+.modalbox{
+  
+}
+
+
 .metricsBox {
   padding: 2em 2em .5em;
   text-align: center;
@@ -145,6 +150,13 @@ body {
     color: hsl(228, 34%, 66%);
     letter-spacing: 5px;
     font-size: 14px;
+}
+
+.modalComparison h3{
+  font-weight: 700;
+  font-size: 55px;
+  margin: 0;
+
 }
 
 .accountName {

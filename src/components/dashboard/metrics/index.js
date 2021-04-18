@@ -6,11 +6,13 @@ import { ReactComponent as Twitter } from "./../../../assets/img/icon-twitter.sv
 import { ReactComponent as Instagram } from "./../../../assets/img/icon-instagram.svg";
 import { ReactComponent as Up } from "./../../../assets/img/icon-up.svg";
 import { ReactComponent as Down } from "./../../../assets/img/icon-down.svg";
+import Modalshow from "./modal/index";
 
 const Metrics = () => {
     return (
         <div className="metrics">
             <div className="container">
+                <Modalshow></Modalshow>
                 <Row>
                     <Col md={3}>
                         <div className="metricsBox facebook">
