@@ -1,0 +1,178 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.dashboardHeader {
+  background-color: hsl(232, 19%, 15%);
+  padding: 2em 0 1em;
+  color: hsl(0, 0%, 100%);
+}
+
+.dashboardTitle {
+  font-weight: 700;
+  margin-bottom: 0.1em;
+}
+
+.dashboardSubtitle {
+  font-weight: 700;
+  font-size: 14px;
+  color: hsl(228, 34%, 66%);
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.rightSection {
+  margin-left: auto;
+  margin-top: 1em;
+}
+
+.rightSection p {
+  font-weight: 700;
+  font-size: 14px;
+  color: hsl(228, 34%, 66%);
+  margin-top: 0.15em;
+}
+
+/* Toggle */
+.css-xjimrv-Switch {
+  margin-left: 0.8em;
+  margin-top: 0.13em;
+  width: 41px !important;
+  height: 20px !important;
+}
+
+.css-10rwusc-Switch {
+  border-radius: 10px !important;
+  background: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  ) !important;
+}
+
+.css-r8xu98-Switch {
+  border-radius: 10px !important;
+  background: rgb(170, 170, 170) !important;
+}
+
+.css-r8xu98-Switch:hover {
+  background: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  ) !important;
+}
+
+.css-175024i-Switch {
+  top: 3px !important;
+  right: 23.7px !important;
+  border-radius: 10px !important;
+}
+
+.css-1ubphy0-Switch {
+  top: 3px !important;
+  left: 23.2px !important;
+  right: 2.5px !important;
+}
+
+/* */
+
+.metrics {
+  padding: 1em 0;
+  background: linear-gradient(
+    180deg,
+    hsl(232, 19%, 15%) 50%,
+    hsl(230, 17%, 14%) 50%
+  );
+}
+
+.metricsBox {
+  padding: 2em 2em .5em;
+  text-align: center;
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(228, 28%, 20%);
+  border-radius: 5px;
+  border-top: 5px solid #c4268c;
+  position: relative;
+}
+
+.instagram::before, .facebook::before, .twitter::before, .youtube::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  left: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+.twitter::before {
+    background: hsl(195, 100%, 50%);
+}
+
+.facebook::before {
+    background: hsl(203, 89%, 53%);
+}
+
+.youtube::before {
+    background: hsl(348, 97%, 39%);
+}
+
+.centerFlex {
+  justify-content: center;
+}
+
+.socialMedia {
+    margin-right: .5em;
+}
+
+.metricsNumbers h3 {
+    font-weight: 700;
+    font-size: 55px;
+    margin: 0;
+}
+
+.metricsNumbers h6 {
+    color: hsl(228, 34%, 66%);
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+
+.accountName {
+    color: hsl(228, 34%, 66%);
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: .15em;
+}
+
+.comparison {
+    margin-top: 1.5em;
+    margin-bottom: 0;
+}
+
+.comparisonDiffUp {
+    color: hsl(163, 72%, 41%);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.comparisonDiffDown {
+    color: hsl(356, 69%, 56%);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.comparisonIcon {
+    margin-top: .4em;
+    margin-right: .3em;
+}
