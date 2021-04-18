@@ -1,8 +1,20 @@
 import React, { useState } from 'react';
 import Switch from 'react-input-switch';
+import { setTheme } from './../../../utils/themes';
 
 const Header = () => {
     const [value, setValue] = useState(0);
+
+    const changeTheme = (value) => {
+        setValue(value);
+        if(value === 0) {
+            setTheme('dark-theme');
+        }
+        else if(value === 1) {
+            setTheme('light-theme');
+        }
+    }
+
     return(
         <div className="dashboardHeader">
             <div className="container flex">
@@ -17,7 +29,7 @@ const Header = () => {
                     <div>
                         <Switch 
                             value={value} 
-                            onChange={setValue} 
+                            onChange={changeTheme} 
                             styles={{
                                 track: {
                                 background: 'linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%))'
