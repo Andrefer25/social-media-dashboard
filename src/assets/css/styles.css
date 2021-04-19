@@ -120,8 +120,44 @@ body {
   );
 }
 
-.modalbox{
+.modal-content{
   
+  width: 100%;
+  color: var(--text-color);
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  position: relative;
+  
+}
+.close{
+  color: var(--text-color);
+}
+
+.close:hover{
+  color: var(--text-sec-color);
+}
+
+.modal-body{
+  background-color: hsl(230, 17%, 14%);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.modal-body h3{
+  color: var(--text-sec-color);
+    font-size: 20px;
+    margin-top: .15em;
+    margin-bottom: 1.15em;
+    padding-left: 2.15em ;
+}
+
+.modal-header{
+  border-bottom: none;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 40px;
 }
 
 
@@ -188,10 +224,29 @@ body {
 .modalComparison h3{
   font-weight: 700;
   font-size: 55px;
-  margin: 0;
+  margin: 10px;
 
 }
 
+.modalComparison h4{
+  font-weight: 700;
+  font-size: 55px;
+  margin: 10px;
+  color: hsl(162, 46%, 71%);
+
+}
+.modalComparison {
+  margin: 10px;
+  align-items: center;
+}
+.modalInfoText{
+  margin-top: 10px;
+}
+
+.modalTitle {
+  margin-top: 10px;
+  font-size: 14px;
+}
 .accountName {
     color: var(--text-sec-color);
     font-size: 12px;
