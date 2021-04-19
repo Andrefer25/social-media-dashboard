@@ -124,7 +124,7 @@ body {
   
   width: 100%;
   color: var(--text-color);
-  background-color: var(--card-bg);
+  background-color: var(--header-bg);
   border-radius: 20px;
   position: relative;
   
@@ -138,7 +138,7 @@ body {
 }
 
 .modal-body{
-  background-color: hsl(230, 17%, 14%);
+  background-color: var(--bg-color);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   padding-top: 35px;
@@ -223,22 +223,40 @@ body {
 
 .modalComparison h3{
   font-weight: 700;
-  font-size: 55px;
+  font-size: 45px;
   margin: 10px;
 
 }
 
 .modalComparison h4{
   font-weight: 700;
-  font-size: 55px;
+  font-size: 45px;
   margin: 10px;
   color: hsl(162, 46%, 71%);
-
 }
+
+.modalRow {
+  margin-left: -.2em;
+}
+
 .modalComparison {
-  margin: 10px;
+  margin: 10px 0;
   align-items: center;
 }
+
+.modalComparison p {
+  margin-top: 1em;
+  margin-left: .5em;
+}
+
+.modalFollowers {
+  margin-right: -1em;
+}
+
+.modal-header .close {
+  margin: -2.5rem -2rem -1em auto;
+}
+
 .modalInfoText{
   margin-top: 10px;
 }
@@ -246,12 +264,27 @@ body {
 .modalTitle {
   margin-top: 10px;
   font-size: 14px;
+  margin-left: 1.7em;
 }
+
 .accountName {
     color: var(--text-sec-color);
     font-size: 12px;
     font-weight: 700;
     margin-top: .15em;
+}
+
+.modalAccountName {
+  font-size: 14px;
+  margin-top: 0;
+  margin-left: .2em;
+}
+
+.modalType {
+  margin-left: 0.75em;
+  font-size: 30px;
+  margin-bottom: .2em;
+  font-weight: 700;
 }
 
 .comparison {

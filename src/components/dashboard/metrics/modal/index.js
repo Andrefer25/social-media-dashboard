@@ -1,12 +1,9 @@
 import React from "react";
 import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
-import { ReactComponent as Up } from "./../../../../assets/img/icon-up.svg";
-import { ReactComponent as Down } from "./../../../../assets/img/icon-down.svg";
 import { ReactComponent as Facebook } from "./../../../../assets/img/icon-facebook.svg";
 import { BsFillCaretUpFill } from "react-icons/bs";
 import { Row, Col } from "react-bootstrap";
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 
 
 const data = [
@@ -47,22 +44,22 @@ const data = [
     },
     {
         name: '10',
-        Followers: 13,
+        Followers: 10,
         amt: 10,
     },
     {
         name: '11',
-        Followers: 8,
+        Followers: 11,
         amt: 9,
     },
     {
         name: '12',
-        Followers: 10,
+        Followers: 12,
         amt: 8,
     },
     {
-        name: '13',
-        Followers: 13,
+        name: '12',
+        Followers: 12,
         amt: 10,
     },
 ];
@@ -79,15 +76,15 @@ const Modalshow = () => {
         >
             <Modal.Header closeButton>
                 <div className="container">
-                    <h4 className="dashboardTitle">Facebook Followers</h4>
+                    <h4 className="modalType">Facebook Followers</h4>
                     <div className="flex modalTitle">
                         <Facebook className="socialMedia" />
-                        <p className="accountName ">@nathanf</p>
+                        <p className="accountName modalAccountName">@nathanf</p>
                     </div>
-                    <Row>
-                        <Col md={3} className=" flex modalComparison">
+                    <Row className="modalRow">
+                        <Col md={3} className=" flex modalComparison modalFollowers">
                             <h3>1987</h3>
-                            <p className="modalInfoText" >Total Followers</p>
+                            <p className="modalInfoText">Total Followers</p>
                         </Col>
                         <Col md={3} className="flex modalComparison">
                             <BsFillCaretUpFill color="hsl(162, 46%, 71%)" size={35} />
@@ -99,7 +96,6 @@ const Modalshow = () => {
                             <h4>12</h4>
                             <p className="modalInfoText">New followers today</p>
                         </Col>
-                    
                     </Row>
                 </div>
 
@@ -107,7 +103,7 @@ const Modalshow = () => {
             <Modal.Body>
             <div className="container">
                 <h3>May 4 - 13 </h3>
-                <LineChart width={1000} height={300} data={data}>
+                <LineChart width={1000} height={300} data={data} >
                     <XAxis dataKey="name" />
                     <YAxis />
                     <Tooltip />
